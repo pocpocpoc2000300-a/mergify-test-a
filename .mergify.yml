@@ -1,0 +1,6 @@
+merge_protections:
+  - name: require-label-rule
+    description: test rule requiring label
+    if: []
+    success_conditions:
+      - label = ready
