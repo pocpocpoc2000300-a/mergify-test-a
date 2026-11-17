@@ -1,0 +1,6 @@
+commands_restrictions:
+  backport:
+    conditions:
+      - or:
+          - sender-permission >= write
+          - sender = {{author}}
