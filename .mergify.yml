@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: Backport merged fixes
+    conditions:
+      - merged
+      - label = needs-backport
+    actions:
+      backport:
+        branches:
+          - stable/3.1
